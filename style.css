@@ -1,0 +1,209 @@
+html {
+    overflow: auto;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+.container-fluid { 
+  padding: 0px;
+}
+#navCon{
+	padding-left: 15px;
+}
+.container{ 
+  padding: 0px;
+}
+#logo{
+	margin-left: 0%;
+}
+#slogan{
+	position: absolute;
+	top: 115px;
+	width: 100%;
+	margin-left: -15px;
+	text-align: center;
+	color: #bbb;
+	font: bold 20px arial, sans-serif;
+}
+.titleBar{
+	background-color: hsl(248, 0%, 3%);
+	/*background-image: url(images/zebraTop.jpg);*/
+	background-image: cover;
+	height: 150px;
+	z-index: 20;
+}
+.titleText{
+	color: hsl(248, 0%, 15%);
+	text-shadow: 1px 1px hsl(248, 0%, 10%), -1px -1px hsl(248, 0%, 25%);
+	font: bold 400px arial, sans-serif;
+	width: 100%;
+	text-align: center;
+	font-size: 600%;
+	top: 50%;
+	margin-top: -50px; 
+	position: absolute;
+	margin-left: -15px;
+}
+.sidebar{
+	background-image: url(images/zebraBackground-01.png);
+	background-repeat: repeat;
+	background-size: 200%;
+	height: 905px;
+	z-index: 10;
+	margin-bottom: -15px;
+}
+.navCont{
+	position: sticky;
+	top: -150px;
+	z-index: 15;
+}
+.navbar{
+	position: sticky;
+	top:-150px;
+	background-color: hsl(248, 0%, 10%);
+	margin-bottom: 0px;
+	box-shadow: 0px 10px 8px rgba(0,0,0,0.2);
+	z-index: 15;
+	transition:background-color 0.75s ease;
+}
+@media only screen and (max-width: 991px)  {
+	.sidebar{
+		background-size: 400%;
+	}
+}
+@media only screen and (max-width: 767px)  {
+	.sidebar{
+		background-size: 800%;
+	}
+	#logo{
+		display: none;
+	}
+}
+
+.caroScale{
+	width: 100%;
+	margin-left: 0%;
+	margin-top: 15px; 
+	box-shadow: 10px 10px 8px rgba(0,0,0,0.2),10px -10px 8px rgba(0,0,0,0.2),10px -10px 8px rgba(0,0,0,0.2),-10px -10px 8px rgba(0,0,0,0.2);
+}
+.title{
+	margin: 15px;
+	font: bold 50px arial, sans-serif;
+	color: rgb(16,16,16);
+	text-shadow: 1px 1px rgb(35,35,35), -1px -1px rgb(15,15,15);
+}
+#right{
+	box-shadow: -10px 0px 8px rgba(0,0,0,0.2);
+	background-position: right;
+}
+#left{
+	box-shadow: 10px 0px 8px rgba(0,0,0,0.2);
+	background-position: left;
+}
+.main{
+	background-color: rgb(25,25,25);
+	height: 905px;
+	margin-bottom: -15px;
+}
+.fet{
+	background-color: rgb(23,23,23);
+	margin: 15px;
+	box-sizing: border-box;
+	font: bold 30px arial, sans-serif;
+	text-align: left;
+	color: rgb(8,8,8);
+	padding: 15px;
+	box-shadow: 2px 2px rgb(35,35,35), -2px -2px rgb(15,15,15);
+	text-shadow: 1px 1px rgb(35,35,35), -1px -1px rgb(15,15,15);
+}
+.fet h1{
+	box-shadow: none;
+	color: grey;
+	font: normal 15px arial, sans-serif;
+}
+#recip{
+	color: grey;
+}
+#notAboutUsText{
+	height: 100px;
+	text-align: center;
+}
+.btn-default{
+	background-color: rgb(23,23,23);
+	color: grey;
+}
+#linkC{
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.links a:link, .links a:hover, .links a:visited{
+	text-decoration: none;
+	float: left;
+	color: grey;
+	background-color: rgb(55,55,55);
+	width: 100%;
+	margin-top: 30px;
+	height: 70px;
+	padding-left: 15px;
+	padding-top: 18px;
+	font: bold 30px arial, sans-serif;
+	vertical-align: center;
+	box-shadow: 0px 10px 8px rgba(0,0,0,0.2),10px 0px 8px rgba(0,0,0,0.2),-10px 0px 8px rgba(0,0,0,0.2),0px -10px 8px rgba(0,0,0,0.2);
+}
+.links a:hover{
+	color: white;
+}
+@media only screen and (max-width: 1199px)  {
+	.links a:link, .links a:hover, .links a:visited{
+		padding-top: 18px;
+		font: bold 25px arial, sans-serif;
+	}
+}
+@media only screen and (max-width: 991px)  {
+	.links a:link, .links a:hover, .links a:visited{
+		padding-top: 22px;
+		font: bold 20px arial, sans-serif;
+	}
+	.orderLen{
+		height: 1105px;
+	}
+	.recipeSe{
+		height: 1005px;
+	}
+}
+@media only screen and (max-width: 767px)  {
+	.links a:link, .links a:hover, .links a:visited{
+		padding-top: 26px;
+		font: bold 15px arial, sans-serif;
+	}
+	.orderLen{
+		height: 1105px;
+	}
+	.recipeSe{
+		height: 1505px;
+	}
+}
+
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+body{
+	background-color: rgb(0,0,0);
+	overflow-x: hidden;
+}

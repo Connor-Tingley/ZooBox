@@ -1,0 +1,9 @@
+body {
+  background-color: #f00;
+  min-height:1200px;
+  transition:background-color 0.75s ease;
+}
+
+.blue {
+  background-color: #00f;
+}
